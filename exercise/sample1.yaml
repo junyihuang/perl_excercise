@@ -1,0 +1,45 @@
+# List 
+#Favorite movies
+- Casablanca
+- North by Northwest
+- The Man Who Wasn't There
+
+# shopping list
+[milk,pumkin pie,eggs,juice]
+
+# Associative Arrays
+#Indented Block
+   name: John Smith
+   age: 33
+ 
+#Inline block
+{name:John Smith, age: 33}
+
+# Lists of associative arrays
+- {name: John Smith, age: 33}
+- name: Mary Smith
+  age: 27
+
+# Associative arrays lists
+men: [John Smith, bill Jones]
+women: 
+   - Mary Smith
+   - Susan Williams
+
+# Reference
+- step: &id001
+    instrument:  Lasik 2000
+    pulseEnergy: 5.4
+    pulseDuration: 12
+    repetition: 1000
+    spotSize: 2mm
+- step: &id002
+    instrument: Lasik 2000
+    pulseEnergy: 5.0
+    pulseDuration: 12
+    repetition: 500
+    spotSize: 1mm
+- step: *id001
+- step: *id002
+- step: *id001
+- step: *id002

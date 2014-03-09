@@ -1,0 +1,29 @@
+---
+# Associative arrays lists
+- apple:
+- pitch:
+- banana:
+- animal:
+  - dog
+  - cat
+  - mouse
+  - cock
+- men: [John Smith, bill Jones]
+- women: 
+# Reference
+- step: &id001
+    instrument:  Lasik 2000
+    pulseEnergy: 5.4
+    pulseDuration: 12
+    repetition: 1000
+    spotSize: 2mm
+- step: &id002
+    instrument: Lasik 2000
+    pulseEnergy: 5.0
+    pulseDuration: 12
+    repetition: 500
+    spotSize: 1mm
+- step1: *id001
+- step2: *id002
+- step3: *id001
+- step4: *id002
